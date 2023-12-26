@@ -2,8 +2,8 @@
 main:
   - title: "About Me"
     url: /aboutme/
-  - title: "Check"
-    url: https://raw.githubusercontent.com/monishagopalan/credit-rating-forecast/main/dataset-description.md
+  - title: "Blogs"
+    url: /blogs/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
