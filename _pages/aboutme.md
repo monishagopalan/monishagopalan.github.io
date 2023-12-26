@@ -3,10 +3,10 @@ layout: single
 read_time: false
 comments: false
 share: false
-title: <br><br><br><br><br><br>About Me
+title: About Me
 permalink: /aboutme/
+
 ---
-<img align="right" width="200" src="/assets/images/me1.jpg" alt="Monisha Gopalan"/>
 
 An AI Scientist Intern, specializing in Portfolio Optimization in Finance. Solid background in deep learning methods and statistics. Actively seeking opportunities as a Quantitative Analyst. 
 

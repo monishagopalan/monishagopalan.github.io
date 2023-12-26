@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Monisha Gopalan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/me1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "AI Scientist in Finance"
   location         : "Italy"
   email            :
@@ -115,7 +115,10 @@ author:
       url: "mailto:moni2996@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/monishagopalan"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://www.linkedin.com/in/monisha-gopalan/"
 
 # Reading Files
 include:
@@ -188,13 +191,15 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-# Plugins (previously gems:)
-plugins:
+
+# Plugins
+gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -202,8 +207,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
-
+  - jemoji
 
 # Archives
 #  Type

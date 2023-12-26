@@ -4,13 +4,13 @@ layout: single
 read_time: false
 comments: false
 share: false
-title: <br><br><br><br><br><br>Monisha Gopalan
+title: Monisha Gopalan
 permalink: /
 excerpt: "Dual Masters degree in Theoretical Physics and Materials Science<br><br>"
 
 ---
 
-# Hello! Welcome to my Blog!
+Hello! Welcome to my Blog!
 
 I am Monisha Gopalan and this is a space where I share my work in the fields of Quantitative Finance, Artificial Intelligence, and Theoretical Physics. I hold dual Masters degrees in Theoretical Physics and Materials Science and get to know more about my academic journey and professional interests in the [About me](aboutme.md) section.
 
