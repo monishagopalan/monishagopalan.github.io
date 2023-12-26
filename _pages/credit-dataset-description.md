@@ -73,7 +73,8 @@ The categorical variable `Rating` was converted into numerical labels using the 
 Despite these enhancements, the dataset remains unbalanced. To tackle this, SMOTE Analysis was applied to generate synthetic instances for the minority classes, addressing the imbalance automatically through the imbalance library.
 Now, to transform the categorical variable `Rating` into numerical labels, the `LabelEncoder` from the scikit-learn's preprocessing module is utilized where each unique label is assigned a unique integer code. 
 
-Although improved, our dataset still remains unbalanced.  To tackle this, [SMOTE Analysis](smote.md) was applied to generate synthetic instances for the minority classes using the `SMOTE` function from the `imblearn.over_sampling`.  
+Although improved, our dataset still remains unbalanced.  To tackle this, [SMOTE Analysis]({% post_url 2023-12-26-smote %})
+ was applied to generate synthetic instances for the minority classes using the `SMOTE` function from the `imblearn.over_sampling`.  
 
 ## Input Features:
 The other columns in the dataset are the input features related to financial indicators and information about the company. 
