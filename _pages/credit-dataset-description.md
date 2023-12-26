@@ -1,10 +1,12 @@
 ---
-title: "Corporate Credit Rating Dataset: Exploratory Data Analysis and Data Preparation"
+
 layout: single
 read_time: true
 comments: true
 share: true
 author_profile: true
+title: "Corporate Credit Rating Dataset: Exploratory Data Analysis and Data Preparation"
+permalink: /projects/credit-rating/dataset-description/
 categories:
   - credit-rating
 tags:

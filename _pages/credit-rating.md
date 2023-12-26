@@ -17,8 +17,9 @@ The primary objective of this project is to leverage machine learning techniques
 The dataset is obtained from Kaggle [Corporate Credit Rating](https://www.kaggle.com/datasets/agewerc/corporate-credit-rating/data).
 This dataset comprises 2029 credit ratings assigned by major agencies to prominent US firms traded on NYSE or Nasdaq. The ratings span the period from 2010 to 2016. Each entry encompasses 30 features, with 25 being financial indicators. 
 
-[Exploratory Data Analysis and Data Preparation](_posts\2023-12-26-dataset-description.md)
-
+[Exploratory Data Analysis and Data Preparation](credit-dataset-description.md)
+[Exploratory Data Analysis and Data Preparation - realtive url]({{"/projects/credit-rating/dataset-description/"| relative_url }})
+ 
 ## Methods
 
 The following machine learning models were implemented
