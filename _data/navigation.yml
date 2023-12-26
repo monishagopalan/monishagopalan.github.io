@@ -4,6 +4,8 @@ main:
     url: /aboutme/
   - title: "Blogs"
     url: /blogs/
+  - title: "Projects"
+    url: /projects/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

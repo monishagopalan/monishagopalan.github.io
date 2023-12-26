@@ -10,8 +10,6 @@ permalink: /aboutme/
 
 An AI Scientist Intern, specializing in Portfolio Optimization in Finance. Solid background in deep learning methods and statistics. Actively seeking opportunities as a Quantitative Analyst. 
 
-Connect with me on <a href="https://www.linkedin.com/in/monisha-gopalan/">LinkedIn</a>.
-
 Here is a snapshot of my experiences and my [Resume](AI_Scientist_Monisha_Gopalan_Resume.pdf)
 
 ## Top Skills
@@ -54,6 +52,7 @@ Here is a snapshot of my experiences and my [Resume](AI_Scientist_Monisha_Gopala
 
 
 ## Education
+
 
 | ------------------------------------------------------------------------------------------------------| ----------- |
 | **Master's in Physics**<br>University of Padova, Italy                                                | 2019 - 2023 |
