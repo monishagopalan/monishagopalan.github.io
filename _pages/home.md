@@ -4,24 +4,15 @@ layout: single
 read_time: false
 comments: false
 share: false
-title: Monisha Gopalan
+title: Hello! Welcome to my Blog!
 permalink: /
-excerpt: "Dual Masters degree in Theoretical Physics and Materials Science<br><br>"
+
 
 ---
 
-Hello! Welcome to my Blog!
+I am Monisha Gopalan and this is a space where I share my work in the fields of Quantitative Finance, Artificial Intelligence, and Theoretical Physics. I hold dual Masters degrees in Theoretical Physics and Materials Science. 
 
-I am Monisha Gopalan and this is a space where I share my work in the fields of Quantitative Finance, Artificial Intelligence, and Theoretical Physics. I hold dual Masters degrees in Theoretical Physics and Materials Science and get to know more about my academic journey and professional interests in the [About me](aboutme.md) section.
-
-# Featured Projects
-
-Take a look at some of my notable projects:
-
-1. Deep Learning for Portfolio Optimisation: [Blog](projects/deep-portfolio-optimisation.md) ; [GitHub](https://github.com/monishagopalan/deep-learning-portfolio-optimisation)
-2. Corporate Credit Ratings Forecast: [Blog](projects/credit-rating.md); [GitHub](https://github.com/monishagopalan/credit-rating-forecast.git)
-3. Market Index Prediction: [Blog](projects/market-index.md) [GitHub](https://github.com/monishagopalan/market-index-prediction.git)
-4. Monte Carlo RG: [Blog](projects/monte-carlo.md)
+To know more about my academic journey and professional interests checkout the [About me](aboutme.md) section.
 
 
 

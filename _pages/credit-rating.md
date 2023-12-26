@@ -4,7 +4,7 @@ read_time: false
 comments: false
 share: false
 title: Machine Learning Models for Corporate Credit Rating Forecasts
-permalink: /projects/credit-rating
+permalink: /projects/credit-rating/
 
 ---
 

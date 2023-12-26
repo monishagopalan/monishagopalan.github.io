@@ -10,7 +10,7 @@ permalink: /aboutme/
 
 An AI Scientist Intern, specializing in Portfolio Optimization in Finance. Solid background in deep learning methods and statistics. Actively seeking opportunities as a Quantitative Analyst. 
 
-Here is a snapshot of my experiences and my [Resume](AI_Scientist_Monisha_Gopalan_Resume.pdf)
+Here is a snapshot of my experiences and my <a href="/assets/documents/AI_Scientist_Monisha_Gopalan_Resume.pdf" >Reference Letter</a>
 
 ## Top Skills
 
@@ -28,24 +28,22 @@ Here is a snapshot of my experiences and my [Resume](AI_Scientist_Monisha_Gopala
 ## Work Experience
 
 ### AI Scientist - Intern 
-<p style="text-align: left;"><a href="https://www.ipazia.com">Ipazia</a>, Milan, Italy&nbsp;&nbsp;&nbsp;&nbsp;(March 2023 - January 2024)</p>
-
-[Reference Letter](reco-ipazia.pdf)                                             
+<a href="https://www.ipazia.com">Ipazia</a>, Milan, Italy | _March 2023 - January 2024_ <br>
+<a href="/assets/documents/reco-ipazia.pdf" >Reference Letter</a>
 
 - Implemeneted deep learning models for Portfolio Optimization on AWS using PyTorch Lightning.
 - Worked on an internal scikit library for portfolio optimisation [skportfolio](https://github.com/scikit-portfolio/scikit-portfolio).
 - Currently pioneering research on novel architectures with Hopfield layers and Transformers.
 
 ### Master's Thesis Student 
-<p style="text-align: left;">University of Padova, Italy&nbsp;&nbsp;&nbsp;&nbsp;(November 2022 - March 2023)</p>
-
-[Reference Letter from Thesis Advisor](reco-unipd.pdf)
+University of Padova, Italy | _November 2022 - March 2023_ <br>
+<a href="/assets/documents/reco-unipd.pdf" >Reference Letter from Thesis Advisor</a>
 
 - Explored Real Space Renormalization Group Techniques for lattice systems.
 - Implemented Monte Carlo methods for renormalization group studies.
 
 ### Master's Thesis Student
-<p style="text-align: left;">Indian Institute of Science, Bengaluru&nbsp;&nbsp;&nbsp;&nbsp;(November 2018 - July 2019)</p>
+Indian Institute of Science, Bengaluru | _November 2018 - July 2019_
 
 - Modeled Phase-Field for Eutectoid Transformation in Ternary systems.
 - Developed a C program for numerical analysis and growth constant variation.
@@ -53,8 +51,7 @@ Here is a snapshot of my experiences and my [Resume](AI_Scientist_Monisha_Gopala
 
 ## Education
 
-
-| ------------------------------------------------------------------------------------------------------| ----------- |
+| -----------------------------------------------------------------------------------------------------| ----------- |
 | **Master's in Physics**<br>University of Padova, Italy                                                | 2019 - 2023 |
 | **Master of Science in Materials Science**<br>Indian Institute of Science, Bengaluru                  | 2018 - 2019 |
 | **Bachelor of Science (Research) in Materials Science**<br>Indian Institute of Science, Bengaluru     | 2014 - 2018 |
