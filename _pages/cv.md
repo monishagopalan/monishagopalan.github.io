@@ -4,13 +4,12 @@ read_time: false
 comments: false
 share: false
 title: About Me
-permalink: /aboutme/
+permalink: /cv/
 
 ---
 
-An AI Scientist Intern, specializing in Portfolio Optimization in Finance. Solid background in deep learning methods and statistics. Actively seeking opportunities as a Quantitative Analyst. 
 
-Here is a snapshot of my experiences and my <a href="/assets/documents/AI_Scientist_Monisha_Gopalan_Resume.pdf" >Reference Letter</a>
+Here is a snapshot of my experiences and my <a href="/assets/documents/AI_Scientist_Monisha_Gopalan_Resume.pdf" >Resume</a>
 
 ## Top Skills
 
