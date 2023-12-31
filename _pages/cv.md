@@ -8,16 +8,15 @@ permalink: /cv/
 
 ---
 
-
 Here is a snapshot of my experiences and my <a href="/assets/documents/AI_Scientist_Monisha_Gopalan_Resume.pdf" >Resume</a>
 
 ## Top Skills
 
 - **Programming:** 
-        Python (advanced) 
-        SQL, MATLAB, R, C (basic)
+        Python (advanced),
+                SQL, MATLAB, R, C (basic)
 - **IT Skills:** 
-        AWS Sagemaker, Git, VSC
+        AWS Sagemaker, Git, VS Code,
         Linux Terminal, LaTeX
 - **Certifications:** 
     1. Data Analysis with Python
@@ -30,8 +29,8 @@ Here is a snapshot of my experiences and my <a href="/assets/documents/AI_Scient
 <a href="https://www.ipazia.com">Ipazia</a>, Milan, Italy | _March 2023 - January 2024_ <br>
 <a href="/assets/documents/reco-ipazia.pdf" >Reference Letter</a>
 
-- Implemeneted deep learning models for Portfolio Optimization on AWS using PyTorch Lightning.
-- Worked on an internal scikit library for portfolio optimisation [skportfolio](https://github.com/scikit-portfolio/scikit-portfolio).
+- Implemented deep learning models for Portfolio Optimization on AWS using PyTorch Lightning.
+- Worked on a scikit library for portfolio optimisation [skportfolio](https://github.com/scikit-portfolio/scikit-portfolio).
 - Currently pioneering research on novel architectures with Hopfield layers and Transformers.
 
 ### Master's Thesis Student 
