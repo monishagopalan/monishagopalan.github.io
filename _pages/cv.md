@@ -10,19 +10,6 @@ permalink: /cv/
 
 Here is a snapshot of my experiences and my <a href="/assets/documents/AI_Scientist_Monisha_Gopalan_Resume.pdf" >Resume</a>
 
-## Top Skills
-
-- **Programming:** 
-        Python (advanced),
-                SQL, MATLAB, R, C (basic)
-- **IT Skills:** 
-        AWS Sagemaker, Git, VS Code,
-        Linux Terminal, LaTeX
-- **Certifications:** 
-    1. Data Analysis with Python
-    2. Quantitative Finance with R
-    3. Introduction to Portfolio Construction and Analysis with Python
-
 ## Work Experience
 
 ### AI Scientist - Intern 
@@ -54,6 +41,17 @@ Indian Institute of Science, Bengaluru | _November 2018 - July 2019_
 | **Master of Science in Materials Science**<br>Indian Institute of Science, Bengaluru                  | 2018 - 2019 |
 | **Bachelor of Science (Research) in Materials Science**<br>Indian Institute of Science, Bengaluru     | 2014 - 2018 |
 
+## Top Skills
 
+- **Programming:** 
+        Python (advanced),
+                SQL, MATLAB, R, C (basic)
+- **IT Skills:** 
+        AWS Sagemaker, Git, VS Code,
+        Linux Terminal, LaTeX
+- **Certifications:** 
+    1. Data Analysis with Python
+    2. Quantitative Finance with R
+    3. Introduction to Portfolio Construction and Analysis with Python
 
 

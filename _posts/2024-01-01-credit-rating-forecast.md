@@ -32,28 +32,11 @@ The dataset loaded as a pandas dataframe, `ratings_df` consists of 2029 entries 
 
 The target variable is the `Rating` column, representing the credit rating assigned by agencies. Taking a closer look at the list of agencies and their different ratings using `ratings_df['Rating Agency Name'].value_counts()` and `ratings_df.groupby('Rating Agency Name')['Rating'].unique()`:
 
-|     Rating Agency Name             |                     Ratings             |      Counts      |
-|------------------------------------|-----------------------------------------|------------------|
-| DBRS                               |                              [AA, BBB]  |        3         |
-| Egan-Jones Ratings Company         |  [A, BBB, AA, B, CCC, BB, AAA, CC, C]   |      603         |
-| Fitch Ratings                      |          [BBB, A, AA, CC, BB, B, CCC]   |      100         |
-| Moody's Investors Service          |      [A, BBB, BB, B, AAA, CCC, C, AA]   |      579         |
-| Standard & Poor's Ratings Services |  [BBB, A, BB, AA, B, D, AAA, CCC, CC]   |      744         |
+![png](/assets/images/credit-rating/rating-distribution-by-agency.png)
+
 
 The dataset shows an imbalance in credit ratings, with varying frequencies for each rating category as it is evident from `ratings_df.Rating.value_counts()`
 
-|Ratings| Count|
-|------|-------|
-| BBB  |   671 |
-| BB   |  490  |
-| A    |  398  |
-| B    |  302  |
-| AA   |   89  |
-| CCC  |   64  |
-| AAA  |    7  |
-| CC   |   5   |
-| C    |   2   |
-| D    |   1   |
 
 In addition, we are working with ratings from different agencies. One way to address this is to simplify and merge the ratings labels according to the following table from [Investopedia: Corporate Credit Ratings](https://www.investopedia.com/terms/c/corporate-credit-rating.asp)
 
@@ -87,6 +70,9 @@ Now, to transform the categorical variable `Rating` into numerical labels, the `
 
 Although improved, our dataset still remains unbalanced.  To tackle this, SMOTE Analysis
  was applied to generate synthetic instances for the minority classes using the `SMOTE` function from the `imblearn.over_sampling`.  
+
+ ![png](/assets/images/credit-rating/smote-accuracy.png)
+
 
 ## Input Features:
 The other columns in the dataset are the input features related to financial indicators and information about the company. 
@@ -142,7 +128,10 @@ These ratios delve into a company's cash flow dynamics, providing insights into 
 24. `companyEquityMultiplier`: Indicates the multiplier effect on equity due to debt
 25. `enterpriseValueMultiple`: Evaluates a company's overall value relative to its earnings.
 
+
 ## Descriptive Statistics
+
+![png](/assets/images/credit-rating/corr-matrix.png)
 
 The function `data.describe()` gives statistical descriptions like `mean`, `min`, `max`, `percentiles` of the numerical financial indicators. Comparison of the mean to the median and examining the range between percentiles, there seems to be an indication of the presence of outliers. 
 
@@ -156,7 +145,9 @@ This work in exploring and preparing our dataset, sets the stage for the next ph
 # ML Models
 
     1. Logistic Regression
-    2. SVM
+
+    2. SVM: SVM is an algorithm that implements non linear boundaries between classes by transforming the input data into a high dimensional space. This mapping into a new space is a task of kernel functions which make the input data set linearly separable. In the new space, SVM constructs a maximal margin hyperplane which provides a maximum separation between output classes. The training observations that are closest to the maximal margin hyperplane are called support vectors.
+
     3. KNN
     4. Random Forest
     5. Gradient Boost
@@ -166,8 +157,13 @@ This work in exploring and preparing our dataset, sets the stage for the next ph
 ## Hyperparameter Optimisation
 
 
-
 # Results
+
+![png](/assets/images/credit-rating/accuracy-model.png)
+
+![png](/assets/images/credit-rating/confusion-matrix.png)
+
+![png](/assets/images/credit-rating/feature-importance.png)
 
 
 # References
