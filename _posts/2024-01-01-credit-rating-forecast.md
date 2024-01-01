@@ -8,6 +8,14 @@ share: true
 author_profile: true
 toc: true
 toc_label: "Table of Contents"
+categories:
+ - quant_finance
+tags:
+ - XGBoost
+ - credit_risk
+ - classification
+ - smote
+ 
 ---
 
 [![](https://img.shields.io/badge/GitHub-View_Repository-blue?logo=GitHub)](https://github.com/monishagopalan/credit-rating-forecast)
@@ -26,17 +34,15 @@ Each agency applies its own methodology to measure creditworthiness and this ass
 
 One solution to address delays would be to use the historical financial information of a company to build a predictive quantitative model capable of forecasting the credit rating that a company will receive. I employed machine learning techniques, creating classification models that quickly forecast credit ratings. 
 # Dataset
-The dataset is obtained from Kaggle [Corporate Credit Rating](https://www.kaggle.com/datasets/agewerc/corporate-credit-rating/data). 
-The dataset loaded as a pandas dataframe, `ratings_df` consists of 2029 entries (rows) and 31 columns. Each entry represents a big US firm traded on NYSE or Nasdaq. The ratings span the period from 2010 to 2016. The dataset has 593 unique US firms, as seen from `ratings_df.Name.value_counts()`.    
-## Credit Ratings
+The [Corporate Credit Rating](https://www.kaggle.com/datasets/agewerc/corporate-credit-rating/data) dataset is obtained from Kaggle. The dataset loaded as a pandas dataframe, `ratings_df` consists of 2029 entries (rows) and 31 columns. Each entry represents a big US firm traded on NYSE or Nasdaq. The ratings span the period from 2010 to 2016. The dataset has 593 unique US firms, as seen from `ratings_df.Name.value_counts()`.    
 
+## Credit Ratings
 The target variable is the `Rating` column, representing the credit rating assigned by agencies. Taking a closer look at the list of agencies and their different ratings using `ratings_df['Rating Agency Name'].value_counts()` and `ratings_df.groupby('Rating Agency Name')['Rating'].unique()`:
 
 ![png](/assets/images/credit-rating/rating-distribution-by-agency.png)
 
 
-The dataset shows an imbalance in credit ratings, with varying frequencies for each rating category as it is evident from `ratings_df.Rating.value_counts()`
-
+The dataset shows an imbalance in credit ratings, with varying frequencies for each rating category as it is evident from `ratings_df.Rating.value_counts()`.
 
 In addition, we are working with ratings from different agencies. One way to address this is to simplify and merge the ratings labels according to the following table from [Investopedia: Corporate Credit Ratings](https://www.investopedia.com/terms/c/corporate-credit-rating.asp)
 
@@ -74,7 +80,7 @@ Although improved, our dataset still remains unbalanced.  To tackle this, SMOTE 
  ![png](/assets/images/credit-rating/smote-accuracy.png)
 
 
-## Input Features:
+## Input Features
 The other columns in the dataset are the input features related to financial indicators and information about the company. 
 
 The 5 features with the company information such as `Name`, `Symbol` (for trading), `Rating Agency Name`, `Date`, and `Sector` provide context and additional details for analysis but their inclusion in the model may not be necessary for the specific task of credit rating prediction.  However, it is important to include the `Sector` feature in our model is crucial for capturing industry-specific nuances that significantly influence a company's financial performance and risk profile. Different sectors exhibit distinct economic characteristics and respond differently to market conditions. By incorporating the `Sector` variable, we aim to enhance the granularity of our analysis, ensuring that the machine learning model discerns sector-specific trends and challenges.
@@ -83,14 +89,14 @@ In order to integrate the categorical data `Sector` it into the model, `LabelEnc
 
 The dataset includes 25 financial indicators that can be categorized into different groups. These financial indicators collectively provide a comprehensive view of a company's financial health and performance, contributing to the evaluation of its creditworthiness.
 
-**(I) Liquidity Measurement Ratios**:
+**(I) Liquidity Measurement Ratios**
 These ratios provide insights into a company's short-term financial health and ability to meet its immediate obligations.
 1. `currentRatio`: Indicates the company's ability to cover short-term liabilities with short-term assets.
 2. `quickRatio`: Measures the company's ability to cover immediate liabilities without relying on inventory.
 3. `cashRatio`: Reflects the proportion of cash and cash equivalents to current liabilities.
 4. `daysOfSalesOutstanding`: Measures the average number of days it takes for a company to collect payment after a sale.
 
-**(II) Profitability Indicator Ratios**:
+**(II) Profitability Indicator Ratios**
 These ratios evaluate a company's ability to generate profits relative to its revenue and investments.
 
 5. `netProfitMargin`: Represents the percentage of profit relative to total revenue.
@@ -103,20 +109,20 @@ These ratios evaluate a company's ability to generate profits relative to its re
 11. `returnOnCapitalEmployed`: Assesses the efficiency of capital utilization in generating profits.
 12. `ebitPerRevenue`: Measures earnings before interest and taxes relative to revenue.
 
-**(III) Debt Ratios**: 
+**(III) Debt Ratios**
 These ratios assess the company's leverage and debt management.
 
 13. `debtEquityRatio`: Measures the proportion of debt relative to equity.
 14. `debtRatio` : Represents the percentage of a company's assets financed by debt.
 
-**(IV) Operating Performance Ratios**:
+**(IV) Operating Performance Ratios**
 These ratios focus on operational efficiency and effectiveness.
 
 15. `assetTurnover`: Evaluates how efficiently a company utilizes its assets to generate sales revenue.
 16. `fixedAssetTurnover` : Measures the efficiency of generating sales from fixed assets.
 17. `payablesTurnover`: Measures the efficiency of a company's payment of its liabilities.
 
-**Cash Flow Indicator Ratios**:
+**(V) Cash Flow Indicator Ratios**
 These ratios delve into a company's cash flow dynamics, providing insights into its financial sustainability. 
 
 18. `operatingCashFlowPerShare`: Reflects the cash generated by core business operations per share.
@@ -139,20 +145,33 @@ Features exhibit different scales, as evident from the magnitude of mean and sta
 
 Additionally, a logarithmic transformation is applied to each value using the `np.log10` function, with a small constant (0.01) added to avoid issues with zero values. This dual transformation approach aims to normalize and potentially enhance the interpretability of the financial indicators in the dataset.
 
-This work in exploring and preparing our dataset, sets the stage for the next phase: deploying different machine learning models to forecast credit ratings.
+This work in exploring and preparing our dataset, sets the stage for the next phase: deploying different machine learning models to forecast credit ratings. Our problem of corporate credit rating forecast is a supervised multi-class classification task. 
 
 
 # ML Models
+We split our input data into training (80%) and test data (20%) using `train_test_split()` from `sklearn.model_selection`. Then we create separate dataframes for the input features (X) and target lables (y). 
 
-    1. Logistic Regression
+Various machine learning models are employed to forecast corporate credit ratings. 
+**1. Logistic Regression:**
+Logistic Regression is a linear model used for binary or multiclass classification. It estimates the probability that a given instance belongs to a particular class. It employs the logistic function (sigmoid) to transform a linear combination of input features into a value between 0 and 1. This output represents the probability of belonging to the positive class. A threshold is applied to make the final classification decision.
 
-    2. SVM: SVM is an algorithm that implements non linear boundaries between classes by transforming the input data into a high dimensional space. This mapping into a new space is a task of kernel functions which make the input data set linearly separable. In the new space, SVM constructs a maximal margin hyperplane which provides a maximum separation between output classes. The training observations that are closest to the maximal margin hyperplane are called support vectors.
+**2. K-Nearest Neighbors (KNN):** 
+KNN is a non-parametric algorithm used for classification. It classifies a data point based on the majority class among its k-nearest neighbors.
+The algorithm calculates the distance between the input instance and all data points in the training set. It then assigns the class that is most common among the k-nearest neighbors.
 
-    3. KNN
-    4. Random Forest
-    5. Gradient Boost
-    6. XGBoost
+**3. Support Vector Machine (SVM):**
+SVM is a powerful classification algorithm that aims to find a hyperplane in a high-dimensional space that best separates data points of different classes. SVM transforms input features into a higher-dimensional space and seeks a hyperplane that maximizes the margin between classes. It classifies instances based on which side of the hyperplane they fall on.
 
+**4. Random Forest:**
+Random Forest is an ensemble learning method that constructs a multitude of decision trees during training and outputs the mode of the classes for classification tasks. It builds multiple decision trees using a subset of features and a random subset of the training data. The final prediction is determined by aggregating the predictions of individual trees (voting or averaging).
+
+**5. Gradient Boost:**
+Gradient Boosting is an ensemble learning method that builds a series of weak learners (typically decision trees) sequentially, each correcting the errors of its predecessor. It fits a weak model to the residuals of the previous model. This process continues, with each new model focusing on the mistakes of the ensemble. The final prediction is a weighted sum of the predictions from all weak models.
+
+**6. XGBoost:**
+XGBoost (Extreme Gradient Boosting) is an advanced version of gradient boosting that incorporates regularization and parallel processing, making it highly efficient. Similar to gradient boosting, XGBoost builds a series of trees sequentially. It optimizes a regularized objective function, combining the prediction from each tree. It uses a technique called boosting to strengthen the model iteratively.
+
+The models are then trained on the training dataset `(X_train, y_train)` and evaluated on the test dataset `(X_test, y_test)`. The accuracy of each model is calculated using the `metrics.accuracy_score` function from `scikit-learn`. 
 
 ## Hyperparameter Optimisation
 
