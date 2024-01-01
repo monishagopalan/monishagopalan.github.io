@@ -21,26 +21,24 @@ tags:
 [![](https://img.shields.io/badge/GitHub-View_Repository-blue?logo=GitHub)](https://github.com/monishagopalan/credit-rating-forecast)
 
 # Introduction
-Corporate credit ratings, issued by credit rating agencies like Standard and Poor's and Moody's, express the agency's opinion about the ability of a company to meet its debt obligations. 
-Typically, ratings are expressed as letter grades that range, for example, from ‘AAA’ to ‘D’ to communicate the agency’s opinion of relative level of credit risk.
-Credit Ratings Are Not Absolute Measures of Default Probability
-For example, a corporate bond that is rated ‘AA’ is viewed
-by the rating agency as having a higher credit quality than a
-corporate bond with a ‘BBB’ rating. But the ‘AA’ rating isn’t a
-guarantee that it will not default, only that, in the agency’s
-opinion, it is less likely to default than the ‘BBB’ bond.
+Corporate credit ratings, issued by credit rating agencies like Standard and Poor's and Moody's, express the agency's opinion about the ability of a company to meet its debt obligations.  Typically, ratings are expressed as letter grades that range, for example, from ‘AAA’ to ‘D’ to communicate the agency’s opinion of relative level of credit risk.
+
+Credit Ratings are not absolute measures of Default Probability. For example, a corporate bond that is rated ‘AA’ is viewed
+by the rating agency as having a higher credit quality than a corporate bond with a ‘BBB’ rating. But the ‘AA’ rating isn’t a
+guarantee that it will not default, only that, in the agency’s opinion, it is less likely to default than the ‘BBB’ bond.
 
 Each agency applies its own methodology to measure creditworthiness and this assessment is an expensive and complicated process. Usually, the agencies take time to provide new ratings and update older ones. This causes delays in decision-making process for investors who use these ratings to assess their credit risk. 
 
-One solution to address delays would be to use the historical financial information of a company to build a predictive quantitative model capable of forecasting the credit rating that a company will receive. I employed machine learning techniques, creating classification models that quickly forecast credit ratings. 
+One solution to address delays would be to use the historical financial information of a company to build a predictive quantitative model capable of forecasting the credit rating that a company will receive. In this project, I employ machine learning techniques, creating classification models that quickly forecast credit ratings. 
+
 # Dataset
+
 The [Corporate Credit Rating](https://www.kaggle.com/datasets/agewerc/corporate-credit-rating/data) dataset is obtained from Kaggle. The dataset loaded as a pandas dataframe, `ratings_df` consists of 2029 entries (rows) and 31 columns. Each entry represents a big US firm traded on NYSE or Nasdaq. The ratings span the period from 2010 to 2016. The dataset has 593 unique US firms, as seen from `ratings_df.Name.value_counts()`.    
 
 ## Credit Ratings
 The target variable is the `Rating` column, representing the credit rating assigned by agencies. Taking a closer look at the list of agencies and their different ratings using `ratings_df['Rating Agency Name'].value_counts()` and `ratings_df.groupby('Rating Agency Name')['Rating'].unique()`:
 
-![png](/assets/images/credit-rating/rating-distribution-by-agency.png)
-
+![Rating Distribution by Agency](/assets/images/credit-rating/rating-distribution-by-agency.png)
 
 The dataset shows an imbalance in credit ratings, with varying frequencies for each rating category as it is evident from `ratings_df.Rating.value_counts()`.
 
@@ -70,16 +68,7 @@ Instead of 10 different rating categories, we have now 6 categories. Using a dic
 The rows with the Ratings: `'Lowest Risk` and `'In Default` are dropped from the dataset given their small value counts. 
 
 The categorical variable `Rating` was converted into numerical labels using the `LabelEncoder` from scikit-learn's preprocessing module, assigning a distinct integer code to each unique label.
-
-Despite these enhancements, the dataset remains unbalanced. To tackle this, SMOTE Analysis was applied to generate synthetic instances for the minority classes, addressing the imbalance automatically through the imbalance library.
-Now, to transform the categorical variable `Rating` into numerical labels, the `LabelEncoder` from the scikit-learn's preprocessing module is utilized where each unique label is assigned a unique integer code. 
-
-Although improved, our dataset still remains unbalanced.  To tackle this, SMOTE Analysis
- was applied to generate synthetic instances for the minority classes using the `SMOTE` function from the `imblearn.over_sampling`.  
-
- ![png](/assets/images/credit-rating/smote-accuracy.png)
-
-
+ 
 ## Input Features
 The other columns in the dataset are the input features related to financial indicators and information about the company. 
 
@@ -100,7 +89,6 @@ These ratios provide insights into a company's short-term financial health and a
 These ratios evaluate a company's ability to generate profits relative to its revenue and investments.
 
 5. `netProfitMargin`: Represents the percentage of profit relative to total revenue.
-
 6. `pretaxProfitMargin`: Measures profitability before taxes are considered.
 7. `grossProfitMargin`: Indicates the percentage of revenue retained after deducting the cost of goods sold.
 8. `operatingProfitMargin`: Reflects the company's profitability from its core operations.
@@ -141,7 +129,11 @@ These ratios delve into a company's cash flow dynamics, providing insights into 
 
 The function `data.describe()` gives statistical descriptions like `mean`, `min`, `max`, `percentiles` of the numerical financial indicators. Comparison of the mean to the median and examining the range between percentiles, there seems to be an indication of the presence of outliers. 
 
-Features exhibit different scales, as evident from the magnitude of mean and standard deviation values. To ensure equal contribution from all features for machine learning algorithms, feature scaling is performed. The Min-Max scaling technique is applied to normalize the numerical values representing financial indicators.  For each column, the `MinMaxScaler` function from `sklearn.preprocessing` is used to transform the values into a standardized range between 0 and 1. The values are then multiplied by 1000, to amplify the scaled values. 
+Features exhibit different scales, as evident from the magnitude of mean and standard deviation values. To ensure equal contribution from all features for machine learning algorithms, feature scaling is performed. The Min-Max scaling technique is applied to normalize the numerical values representing financial indicators. 
+
+$x_{scaled} = \frac{x - x_{min}}{x_{max} - x_{min}}$
+
+For each column, the `MinMaxScaler` function from `sklearn.preprocessing` is used to transform the values into a standardized range between 0 and 1. The values are then multiplied by 1000, to amplify the scaled values. 
 
 Additionally, a logarithmic transformation is applied to each value using the `np.log10` function, with a small constant (0.01) added to avoid issues with zero values. This dual transformation approach aims to normalize and potentially enhance the interpretability of the financial indicators in the dataset.
 
@@ -152,6 +144,7 @@ This work in exploring and preparing our dataset, sets the stage for the next ph
 We split our input data into training (80%) and test data (20%) using `train_test_split()` from `sklearn.model_selection`. Then we create separate dataframes for the input features (X) and target lables (y). 
 
 Various machine learning models are employed to forecast corporate credit ratings. 
+
 **1. Logistic Regression:**
 Logistic Regression is a linear model used for binary or multiclass classification. It estimates the probability that a given instance belongs to a particular class. It employs the logistic function (sigmoid) to transform a linear combination of input features into a value between 0 and 1. This output represents the probability of belonging to the positive class. A threshold is applied to make the final classification decision.
 
@@ -173,17 +166,47 @@ XGBoost (Extreme Gradient Boosting) is an advanced version of gradient boosting 
 
 The models are then trained on the training dataset `(X_train, y_train)` and evaluated on the test dataset `(X_test, y_test)`. The accuracy of each model is calculated using the `metrics.accuracy_score` function from `scikit-learn`. 
 
+## SMOTE
+The Synthetic Minority Over-sampling Technique (SMOTE) is employed to address the issue of class imbalance in the training dataset. The training dataset is characterized by a disproportionate representation of certain credit rating classes as seen from `y_train.value_counts()`, and this can lead to biased model predictions. The SMOTE algorithm is applied to generate synthetic instances of the minority class, thereby balancing the distribution of ratings. By doing so, it ensures that the machine learning models are exposed to a more representative training set, enhancing their ability to generalize and make accurate predictions across different credit rating categories. The resulting distribution of ratings in the resampled training set demonstrates the effectiveness of SMOTE in mitigating class imbalance. Now, we train the models again with the resampled dataset `(X_train_resampled, y_train_resampled)` and evaluate it on `(X_test, y_test)`. 
+
+![Accuracy by Model with and without SMOTE](/assets/images/credit-rating/smote-accuracy.png)
+
+It is observed that the accuracy slightly decreased after employing SMOTE. This phenomenon could be attributed to the introduction of synthetic samples, potentially leading to increased noise and complexity in the dataset. Moreover, the choice of sampling strategy in SMOTE, such as `'auto'`, might have not been optimal for our problem. Alternative methods, including undersampling or experimenting with different SMOTE sampling strategies, could be considered. Keeping in mind that the decision to use or omit SMOTE is usually guided by a comprehensive analysis of the specific dataset characteristics and the performance trade-offs associated with different sampling techniques, we can omit SMOTE resampling in our case.
+
 ## Hyperparameter Optimisation
+We perform hyperparameter optimization for the XGBoost model. 
+
+`RandomizedSearchCV` is a method for hyperparameter tuning that explores a defined number of random combinations of hyperparameters. In our case `n_iter=15` and it searches through 15 different combinations. `StratifiedKFold` is employed for cross-validation. It ensures that each fold preserves the same distribution of target classes as the entire dataset, which is crucial for maintaining the representation of different credit ratings in each fold.  
+
+`xgb_params` defines a grid of hyperparameters to search through. XGBoost parameters such as learning rate, number of estimators, maximum depth, minimum child weight, subsample, and colsample by tree are considered. The metric used for evaluation is accuracy `(scoring='accuracy')`. The search is parallelized `(n_jobs=-1)`, making use of all available CPU cores. The model is fitted to the training data to identify the best hyperparameters. The best model with optimal hyperparameters is then extracted from the search results. Finally, the best model is evaluated on the test set, and the accuracy is noted.
 
 
 # Results
 
-![png](/assets/images/credit-rating/accuracy-model.png)
+![Accuracy by Model](/assets/images/credit-rating/accuracy-model.png)
 
-![png](/assets/images/credit-rating/confusion-matrix.png)
+The `classification_report` provides a comprehensive summary of key classification metrics, including accuracy, precision, recall, and F1 score. 
 
-![png](/assets/images/credit-rating/feature-importance.png)
+- **Accuracy** reflects the overall correctness of the model's predictions. 
+- **Precision** measures the proportion of true positive predictions among instances predicted as positive, highlighting the model's ability to avoid false positives. 
+- **Recall** gauges the model's effectiveness in capturing true positives among all actual positive instances. 
+- **F1 score** balances precision and recall, providing a single metric that considers both false positives and false negatives. 
+
+
+`confusion_matrix` provides insights into the performance of a classification model. It helps to understand the distribution of true positive, true negative, false positive, and false negative predictions. This information aids in assessing the model's ability to correctly classify instances into different credit rating categories.
+
+![Confusion Matrix](/assets/images/credit-rating/confusion-matrix.png)
+
+The feature importance plot for XGBoost illustrates the contribution of each input feature to the model's decision-making process. This is particularly useful in understanding which financial indicators or ratios play a significant role in predicting credit ratings. Analyzing feature importance guides financial analysts and stakeholders in focusing on key metrics that heavily influence the model's predictions.
+
+![Feature Importance](/assets/images/credit-rating/feature-importance.png)
 
 
 # References
 
+1. Parisa Golbayani, Ionuţ Florescu, Rupak Chatterjee: A comparative study of forecasting corporate credit ratings using neural networks, support vector machines, and decision trees. _The North American Journal of Economics and Finance,
+Volume 54, 2020_, https://doi.org/10.1016/j.najef.2020.101251.
+
+2. https://www.kaggle.com/datasets/agewerc/corporate-credit-rating/
+
+3. [Guide to Credit Rating Essentials](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwje_Nn6i72DAxWN8gIHHbgjDfAQFnoECBcQAQ&url=https%3A%2F%2Fwww.spglobal.com%2Fratings%2F_division-assets%2Fpdfs%2Fguide_to_credit_rating_essentials_digital.pdf&usg=AOvVaw1eCCN2ZJXYlPuBycn7-Rmi&opi=89978449)

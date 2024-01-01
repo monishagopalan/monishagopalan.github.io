@@ -18,7 +18,7 @@ permalink: /projects/
 - **Applications** The insights gained can aid financial analysts, investors, and companies in making more informed and quick decisions related to credit risk. The classification methods used here can also be used to forecast other ratings like ESG Ratings.
 
 - **Skills developed** Explored classification methods like XGBoost, RandomForest and techniques to address imbalance in datasets.
-[SMOTE Analysis]({% post_url 2023-12-26-smote %}) Also delved into Financial Ratios gaining knowledge on understanding a company's fiscal strength.
+[SMOTE Analysis]({% post_url 2024-01-01-smote %}) Also delved into Financial Ratios gaining knowledge on understanding a company's fiscal strength.
 
 # Stock Market Index Prediction using LSTM
 [![](https://img.shields.io/badge/GitHub-View_Repository-blue?logo=GitHub)](https://github.com/monishagopalan/market-index-prediction) [![Blog Post](https://img.shields.io/badge/Blog-Read%20Now-brightgreen)](Your_Blog_Post_Link)
