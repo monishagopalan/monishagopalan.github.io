@@ -19,10 +19,3 @@ permalink: /projects/
 
 - **Skills developed** Explored classification methods like XGBoost, RandomForest and techniques to address imbalance in datasets - [SMOTE]({% post_url 2024-01-01-smote %}). Also delved into Financial Ratios gaining knowledge on understanding a company's fiscal strength.
 
-# Stock Market Index Prediction using LSTM
-[![](https://img.shields.io/badge/GitHub-View_Repository-blue?logo=GitHub)](https://github.com/monishagopalan/market-index-prediction) [![Blog Post](https://img.shields.io/badge/Blog-Read%20Now-brightgreen)](Your_Blog_Post_Link)
-
-> - **The Problem** 
-> - **Solution**
-> - **Applications** 
-> - **Skills developed** 
