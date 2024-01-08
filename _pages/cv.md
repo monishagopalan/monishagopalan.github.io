@@ -8,7 +8,7 @@ permalink: /cv/
 
 ---
 
-Here is a snapshot of my experiences and my <a href="/assets/documents/AI_Scientist_Monisha_Gopalan_Resume.pdf" >Resume</a>
+Here is a snapshot of my experiences and my <a href="/assets/documents/Monisha_2024_Resume.pdf" >Resume</a>
 
 ## Work Experience
 
@@ -30,7 +30,7 @@ University of Padova, Italy | _November 2022 - March 2023_ <br>
 ### Master's Thesis Student
 Indian Institute of Science, Bengaluru | _November 2018 - July 2019_
 
-- Modeled Phase-Field for Eutectoid Transformation in Ternary systems.
+- Modelled Phase-Field for Eutectoid Transformation in Ternary systems.
 - Developed a C program for numerical analysis and growth constant variation.
 
 
@@ -45,7 +45,7 @@ Indian Institute of Science, Bengaluru | _November 2018 - July 2019_
 
 - **Programming:** 
         Python (advanced),
-                SQL, MATLAB, R, C (basic)
+        SQL, MATLAB, R, C (basic)
 - **IT Skills:** 
         AWS Sagemaker, Git, VS Code,
         Linux Terminal, LaTeX
