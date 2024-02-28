@@ -7,6 +7,8 @@ comments: true
 share: true
 author_profile: true
 toc: true
+excerpt: ""
+toc_label: "Table of Contents"
 categories:
  - quant_fin
 tags:
@@ -17,20 +19,21 @@ tags:
 
 # Introduction
 
-Consider a simple portfolio of 4 stocks:  AAPL, ALGN, AMZN, and EBAY. The daily price data for these stocks is downloaded from Yahoo Finance, for a 20-year period, from 2004 to 2023. Let $$ P_{i,t}$$ denote the price of stock$$i$$ on day $$t$$  with $$ i = 1,2,3,4 $$.
+Consider a simple portfolio of 4 stocks:  AAPL, ALGN, AMZN, and EBAY. The daily price data for these stocks is downloaded from Yahoo Finance, for a 20-year period, from 2004 to 2023. Let $$ P_{i,t}$$ denote the price of stock $$i$$ on day $$t$$  with $$ i = 1,2,3,4 $$.
 
 For an investor focusing on this portfolio, suppose that the primary investment goal is to minimize overall volatility. Using the daily price data from 2004 to 2019, the `MinimumVolatility` portfolio estimator within the [skportfolio](https://github.com/scikit-portfolio/scikit-portfolio) library is employed to train the portfolio.
 The resulting allocations for the optimised portfolio are as follows:
 
 ![Initial Portfolio Weights](/assets/images/minvol-initial-rebalance.png)
 
-To assess the effectiveness of this allocation strategy, the portfolio is tested on the data from the year 2020. This is a called a _backtest_ as the true historical data is used to test our strategy.
+To assess the effectiveness of this allocation strategy, the portfolio is tested on the data from the year 2020. This is called a _backtest_ as the true historical data is used to test our strategy.
 
 Suppose that an initial amount of 10000 EUR is invested in this portfolio. The positions of the portfolio are the amount investment in each asset. Let $$ Y_{i,t}$$ denote the position of stock $$i$$ on day $$t$$ and $$ W_{i,t}$$ be the weight allocated to stock $$i$$ on day $$t$$. The portfolio returns or equity $$E_{t}$$ on day $$t$$ is the sum of all positions on day $$t$$. 
 
 On Day 1 (January 2, 2020) of testing our allocation strategy, the initial portfolio positions are calculated as
 
 $$ Y_{i,1} = W_{i,1} \times E_{1} $$
+
 $$ E_{1} = 10000  $$
 
 where $$W_{i,0}$$ are the initial weights predicted by our strategy. 
@@ -44,6 +47,7 @@ $$ R_{i,t} = \frac{P_{i,t} - P_{i, t-1}}{ P_{i, t-1}}$$
 The current position, the amount invested in each asset changes in value according to the returns of the asset on that day. For example, the price of AAPL on Day 1 is $$ P_{1,1} = 73.15 $$ and $$ P_{1,2} = 72.44  $$ on Day 2. So the current position of the 3944 EUR in AAPL becomes,
 
 $$ R_{1,2} = -0.0097 $$
+
 $$ Y_{1,2} = (1+R_{1,2})\times Y_{1,1} = 3905.7 $$
 
 This process repeats daily, causing fluctuations in the overall portfolio value. Over time, due to varying returns in different stocks, the weights of these assets within the portfolio naturally change. The figure below visualizes how these weights changed over a month.
