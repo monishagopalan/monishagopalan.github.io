@@ -1,6 +1,6 @@
 ---
 
-title: Hello! Welcome to my Website!
+title: Exploring Interdisciplinary Horizons - <br><br> Monisha Gopalan's Portfolio
 permalink: /
 read_time: false
 
@@ -19,7 +19,7 @@ My recent role as an AI Scientist, where I worked on Deep Learning methods for P
 
 While my initial inclination was towards academia and research, my perspective has evolved, and I now recognize similar and more impactful opportunities in the industry that align with my goals. I am eager to channel my skills and knowledge into endeavors where I can contribute meaningfully. 
 
-> I am actively seeking opportunities in Europe, starting in February 2024, for roles such as Data Scientist, Quantitative Analyst and other similar positions in the fields of finance and data science.
+> I am actively seeking opportunities in Europe, starting in April 2024, for roles such as Data Scientist, Quantitative Analyst and other similar positions in the fields of finance and data science.
 
 ## Hobbies
 
