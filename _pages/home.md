@@ -1,6 +1,6 @@
 ---
 
-title: Exploring Interdisciplinary Horizons - <br><br> Monisha Gopalan's Portfolio
+title: Monisha Gopalan's Portfolio
 permalink: /
 read_time: false
 
