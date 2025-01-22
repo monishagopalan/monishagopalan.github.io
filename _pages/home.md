@@ -6,7 +6,7 @@ read_time: false
 
 ---
 
-I am Monisha Gopalan, 27 years old, originally from India, currently living in Italy. I am working as a **Visual Data Scientist** at Advanced Risk and Portfolio Management ([ARPM](https://www.arpm.co/about)). 
+I am Monisha Gopalan, 28 years old, originally from India, currently living in Italy. I am working as a **Visual Data Scientist** at Advanced Risk and Portfolio Management ([ARPM](https://www.arpm.co/about)). 
 I hold **dual master's** degrees in STEM, having earned my Bachelor of Science (Research) degree from the esteemed **Indian Institute of Science**, a university consistently [ranked #1](https://www.nirfindia.org/Rankings/2024/ResearchRanking.html) in India for its research contributions. Securing a place in their highly interdisciplinary program stands as a significant achievement, considering that only 120 out of 1.5 million high school graduates attain this distinction. Following the completion of my Master's degree in Materials Science at the same institution, I relocated to Italy to pursue a Master's in Physics at the **University of Padova**.
 
 My career took a pivotal turn following an internship as an AI Scientist at a startup in Milan, where I worked on a **research paper** ([ICAIF'24: Hopfield Networks for Asset Allocation](https://dl.acm.org/doi/10.1145/3677052.3698605)) applying Deep Learning techniques to Portfolio Optimization. This experience got me really excited about the opportunities to use my skills in quantitative finance and data science, shaping my current role at **Advanced Risk and Portfolio Management (ARPM)**.

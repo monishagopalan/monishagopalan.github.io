@@ -50,29 +50,11 @@ Indian Institute of Science, Bengaluru | _November 2018 - July 2019_
 
 ## Top Skills
 
-### Programming
-- **Python (Advanced):** NumPy, Pandas, PyTorch, SciPy, Matplotlib, Seaborn, Scikit-learn  
-- **Others:** SQL, MATLAB, R, C (Basic)
+|------------------------|---------------------------------------|
+| **Programming**         | **Python (Advanced):** _NumPy, Pandas, PyTorch, SciPy, Matplotlib, Seaborn, Scikit-learn_  <br> SQL, MATLAB, R, C (Basic)              |
+| **IT Skills**           | AWS Sagemaker <br> Git <br> VS Code <br> Linux Terminal <br> LaTeX                                                                                 |
+| **Certifications**      | 1. _Quant Bootcamp_ – ARPM (July 2024) <br> 2. _Quantitative Finance with R_ – Udemy (July 2023) <br> 3. _Introduction to Portfolio Construction and Analysis with Python_ – Coursera (April 2023) <br> 4. _Data Analysis with Python_ – freeCodeCamp (March 2023) |
+| **Soft Skills**         | Problem Solving <br> Thinking Differently <br> Analytical Skills <br> Communication <br> Planning <br> Teamwork                                     |
 
-### IT Skills
-- AWS Sagemaker  
-- Git  
-- VS Code  
-- Linux Terminal  
-- LaTeX  
-
-### Certifications
-1. **Quant Bootcamp** – ARPM (July 2024)  
-2. **Quantitative Finance with R** – Udemy (July 2023)  
-3. **Introduction to Portfolio Construction and Analysis with Python** – Coursera (April 2023)  
-4. **Data Analysis with Python** – freeCodeCamp (March 2023)  
-
-### Soft Skills
-- Problem Solving  
-- Thinking Differently  
-- Analytical Skills  
-- Communication  
-- Planning  
-- Teamwork  
 
 
