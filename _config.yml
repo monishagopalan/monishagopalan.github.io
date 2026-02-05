@@ -263,3 +263,6 @@ defaults:
       comments: # true
       share: true
       related: true
+
+footer_scripts:
+  - /assets/js/link-preview.js

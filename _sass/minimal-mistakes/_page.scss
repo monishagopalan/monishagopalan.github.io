@@ -27,7 +27,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .initial-content,
@@ -77,7 +77,7 @@ body {
     text-decoration: none;
   }
 
-  & + .page__meta {
+  &+.page__meta {
     margin-top: -0.5em;
   }
 }
@@ -93,22 +93,27 @@ body {
     border-bottom: 1px solid $border-color;
   }
 
-	h1, h2, h3, h4, h5, h6 {
-		.header-link {
-			position: relative;
-			left: 0.5em;
-			opacity: 0;
-			font-size: 0.8em;
-			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
-			-moz-transition: opacity 0.2s ease-in-out 0.1s;
-			-o-transition: opacity 0.2s ease-in-out 0.1s;
-			transition: opacity 0.2s ease-in-out 0.1s;
-		}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    .header-link {
+      position: relative;
+      left: 0.5em;
+      opacity: 0;
+      font-size: 0.8em;
+      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+      -o-transition: opacity 0.2s ease-in-out 0.1s;
+      transition: opacity 0.2s ease-in-out 0.1s;
+    }
 
-		&:hover .header-link {
-			opacity: 1;
-		}
-	}
+    &:hover .header-link {
+      opacity: 1;
+    }
+  }
 
   p,
   li,
@@ -121,8 +126,8 @@ body {
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/
-    @if $paragraph-indent == true {
-      & + p {
+    @if $paragraph-indent ==true {
+      &+p {
         text-indent: $indent-var;
         margin-top: -($indent-var);
       }
@@ -139,7 +144,7 @@ body {
     }
   }
 
-  :not(pre) > code {
+  :not(pre)>code {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     font-size: 0.8em;
@@ -149,7 +154,8 @@ body {
     &::before,
     &::after {
       letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
+      content: "\00a0";
+      /* non-breaking space*/
     }
   }
 
@@ -170,7 +176,7 @@ body {
   }
 
   /* blockquote citations */
-  blockquote + .small {
+  blockquote+.small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
@@ -370,7 +376,7 @@ body {
     border: 0;
   }
 
-  + .taxonomy__section {
+  +.taxonomy__section {
     margin-top: 2em;
   }
 }
@@ -447,6 +453,7 @@ body {
   transition: $global-transition;
 
   &.disabled {
+
     input,
     button,
     textarea,
@@ -574,5 +581,163 @@ body {
     @include breakpoint($x-large) {
       padding-right: 0;
     }
+  }
+}
+
+/*
+   Skills Panel
+   ========================================================================== */
+
+.skill-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  font-family: $sans-serif;
+
+  img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*
+   Timeline
+   ========================================================================== */
+
+.timeline {
+  position: relative;
+  margin: 2em 0;
+  padding-left: 2em;
+
+  /* The continuous vertical line */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6px;
+    width: 2px;
+    background: $border-color;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2em;
+  padding-left: 1.5em;
+
+  /* The Marker Dot */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: -1.8em;
+    width: 14px;
+    height: 14px;
+    background: $primary-color;
+    border: 3px solid $primary-color;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 0 4px $background-color;
+    margin-left: -5px;
+  }
+
+  &.work::before {
+    border-color: $info-color;
+    background: $info-color; // Solid fill for Work
+  }
+
+  &.education::before {
+    border-color: $success-color;
+    background: $success-color; // Solid fill for Education
+  }
+}
+
+.timeline-date {
+  display: block;
+  font-size: $type-size-6;
+  color: $muted-text-color;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.timeline-content {
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-size: $type-size-4;
+  }
+
+  .timeline-subtitle {
+    font-size: $type-size-5;
+    color: $text-color;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  ul {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+}
+
+/*
+   Link Preview Tooltip
+   ========================================================================== */
+
+#link-preview-tooltip {
+  position: absolute;
+  display: none;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid $border-color;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  border-radius: $border-radius;
+  pointer-events: none;
+  /* Let clicks pass through */
+  transition: opacity 0.2s;
+
+  /* Loading Spinner */
+  &.loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid $primary-color;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
