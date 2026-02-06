@@ -61,7 +61,7 @@ Download here <a href="/assets/documents/MonishaGopalan_Resume.pdf" class="btn b
   <div class="skill-item">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" alt="LaTeX">
     <span>LaTeX</span>
-  </div> -->
+  </div>
 </div>
 
 
