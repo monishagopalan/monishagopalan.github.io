@@ -8,8 +8,6 @@ permalink: /cv/
 
 ---
 
-Download here <a href="/assets/documents/MonishaGopalan_Resume.pdf" class="btn btn--primary btn--small"><i class="fas fa-download"></i></a>
-
 ## Top Skills
 
 <div class="skill-panel">
