@@ -3,10 +3,13 @@ layout: single
 read_time: false
 comments: false
 share: false
-title: Curriculum Vitae <a href="/assets/documents/MonishaGopalan_Resume.pdf" class="btn btn--inverse btn--small"><i class="fas fa-download"></i></a>
+title: Curriculum Vitae
 permalink: /cv/
 
 ---
+
+Download here <a href="/assets/documents/MonishaGopalan_Resume.pdf" class="btn btn--primary btn--small"><i class="fas fa-download"></i></a>
+
 ## Top Skills
 
 <div class="skill-panel">
@@ -43,18 +46,6 @@ permalink: /cv/
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresql/azuresql-plain.svg" alt="SQL">
     <span>SQL</span>
   </div>
-  <!-- <div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" alt="MATLAB">
-    <span>MATLAB</span>
-  </div>
-  <div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt="R">
-    <span>R</span>
-  </div>
-  <div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C">
-    <span>C</span>
-  </div> -->
   <div class="skill-item">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
     <span>AWS</span>
@@ -66,10 +57,6 @@ permalink: /cv/
   <div class="skill-item">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code">
     <span>VS Code</span>
-  </div>
-  <!-- <div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux">
-    <span>Linux</span>
   </div>
   <div class="skill-item">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" alt="LaTeX">

@@ -16,9 +16,9 @@ minimal_mistakes_skin    :  "mgo" #default" , "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "Monisha's Portfolio"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "or I'd say a Monifold ;)" # site tagline that appears below site title in masthead
 name                     : "Monisha Gopalan"
 description              : "Personal Website"
 url                      : "https://monishagopalan.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Monisha Gopalan"
   avatar           : "/assets/images/new_dp.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Scientist in Quantitative Finance with a Theoretical Physics background"
+  bio              : "Data Scientist ∩ Quantitative Finance ∩ Theoretical Physics"
   location         : "Milan, Italy"
   email            :
   links:

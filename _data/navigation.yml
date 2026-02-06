@@ -1,11 +1,14 @@
 # main links
 main:
-  - title: "Projects"
-    url: /projects/
-    # children:
-    #   - title: "Credit Rating Forecast"
-    #     url: /projects/credit-rating/
-  - title: "Blogs"
-    url: /blogs/
   - title: "CV"
     url: /cv/
+  - title: "Projects"
+    url: /projects/
+    children:
+      - title: "Credit Rating Forecast"
+        url: /projects/credit-rating/
+  - title: "Blogs"
+    url: /blogs/
+  - title: "Beyond Work"
+    url: /beyondwork/
+  
