@@ -1,0 +1,109 @@
+/* Project Container */
+.project-container {
+    margin-bottom: 2.5rem;
+}
+
+/* Project Header (Title & Links) */
+.project-header-section {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+/* Toggle Button */
+.project-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #888;
+    margin-left: 15px;
+    padding: 5px;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.project-toggle-btn:hover {
+    color: #333;
+    transform: scale(1.1);
+}
+
+.project-main-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+
+.project-links {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Grid Container for the 4 Detail Cards */
+.project-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .project-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Individual Cards */
+.detail-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #ffffff, #f9f9f9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+.detail-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    color: #666;
+    border-bottom: 2px solid #007bff;
+    width: fit-content;
+    margin-bottom: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+.card-content {
+    font-size: 0.75rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}
+
+/* Utilities */
+.detail-card a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #007bff;
+}
+
+.detail-card a:hover {
+    text-decoration: underline;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
