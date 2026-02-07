@@ -3,6 +3,15 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+{% if page.custom_css %}
+{% if page.custom_css.first %}
+{% for stylesheet in page.custom_css %}
+<link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+{% endfor %}
+{% else %}
+<link rel="stylesheet" href="{{ page.custom_css | relative_url }}">
+{% endif %}
+{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link

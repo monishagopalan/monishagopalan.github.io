@@ -28,4 +28,4 @@ _Why Brownian Motion? Beyond the metaphor for life’s unpredictability, it is a
 
 ## Beyond Work
 
-I like getting creative with art and crafts, experimenting with cuisines from around the world, and spending time outdoors in nature. I also enjoy dancing, going to the gym, and appreciating a good meme or pun. Check out my _AI could never_ page for more random quests.
+I like getting creative with art and crafts, experimenting with cuisines from around the world, and spending time outdoors in nature. I also enjoy dancing, going to the gym, and appreciating a good meme or pun. Check out my [AI Could Never](/beyondwork/) page for more random quests.
