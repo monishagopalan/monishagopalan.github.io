@@ -94,7 +94,7 @@ permalink: /cv/
       <ul>
         <li>Analysed large-scale time-series datasets and implemented LSTM and Transformer models for optimizing portfolios, using PyTorch Lightning and AWS SageMaker.</li>
         <li>Worked on a scikit library for portfolio optimisation <a href="https://github.com/scikit-portfolio/scikit-portfolio">skportfolio</a>.</li>
-        <li>Engaged in pioneering research to develop a novel architecture, incorporating Hopfield layers for portfolio optimisation, contributing to a peer-reviewed publication - <a href="https://dl.acm.org/doi/10.1145/3677052.3698605" class="no-preview">ICAIF'24: Hopfield Networks for Asset Allocation</a></li>
+        <li>Engaged in pioneering research to develop a novel architecture, incorporating Hopfield layers for portfolio optimisation, contributing to a peer-reviewed publication - <a href="https://dl.acm.org/doi/10.1145/3677052.3698605">ICAIF'24: Hopfield Networks for Asset Allocation</a></li>
         <li>Explored emerging areas like extreme multilabel classification and conformal prediction for uncertainty quantification.</li>
       </ul>
     </div>
