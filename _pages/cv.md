@@ -3,7 +3,7 @@ layout: single
 read_time: false
 comments: false
 share: false
-title: Curriculum Vitae <a href="/assets/documents/MonishaGopalan_Resume.pdf" class="cv-download-link" target="_blank" title="Download Resume"><i class="fas fa-download"></i></a>
+title: Curriculum Vitae <a href="/assets/documents/MonishaGopalan_Resume.pdf" target="_blank" title="Download "><i class="fas fa-download"></i></a>
 permalink: /cv/
 
 ---
