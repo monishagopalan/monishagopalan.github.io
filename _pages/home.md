@@ -7,7 +7,7 @@ toc: true
 
 I am a Quant-leaning Data Scientist, based in Milan, Italy, working at Advanced Risk and Portfolio Management ([ARPM](https://www.arpm.co/about)) where I translate rigorous quantitative finance concepts into Python code and visual analytics.
 
-I’m driven by the challenge of taking the elegance of mathematical research and applying it to drive smarter, more grounded decisions in the finance industry.
+I love turning complex mathematical research into practical tools. My goal is to use data-driven insights, backed by solid theory, to help the finance industry make smarter, more reliable decisions.
 
 ## My Story: _a Brownian Motion_
 
@@ -21,7 +21,7 @@ _Why Brownian Motion? Beyond the metaphor for life’s unpredictability, it is a
 ## How I Think
 
 - I am inherently curious and quick to grasp new concepts, and I consider my ability to delve to the core of a problem/concept my greatest strength. 
-- I find satisfaction in understanding phenomena through mathematical explanations,  shaped by my studies in abstract mathematical topics like Topology and Group Theory and advanced physics courses like Quantum Field Theory and General Relativity.  
+- I find satisfaction in understanding phenomena through mathematical explanations, shaped by my studies in abstract mathematical topics like Topology and Group Theory and advanced physics courses like Quantum Field Theory and General Relativity.
 - I adopt a critical approach to learning by posing questions to myself and exploring alternatives. 
 - I value interdisciplinary thinking and enjoy combining ideas from different fields to solve problems.
 - I am fascinated by the dynamic world of programming and it has been a consistent companion throughout my academic journey. 

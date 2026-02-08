@@ -1,6 +1,6 @@
 I am a Quant-leaning Data Scientist, based in Milan, Italy, working at Advanced Risk and Portfolio Management ([ARPM](https://www.arpm.co/about)) where I translate rigorous quantitative finance concepts into Python code and visual analytics.
 
-I’m driven by the challenge of taking the elegance of mathematical research and applying it to drive smarter, more grounded decisions in the finance industry.
+I love turning complex mathematical research into practical tools. My goal is to use data-driven insights, backed by solid theory, to help the finance industry make smarter, more reliable decisions.
 
 ## My Story: _a Brownian Motion_
 
