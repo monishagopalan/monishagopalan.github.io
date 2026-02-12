@@ -17,6 +17,7 @@ classes: wide
   <div class="project-header-section">
     <h2 class="project-main-title">Hopfield Network for Asset Allocation</h2>
     <div class="project-links">
+      <a href="/assets/documents/hopfield-networks.pdf" target="_blank" title="Read Paper"><i class="fas fa-download"></i></a>
       <a href="https://doi.org/10.1145/3677052.3698605">
         <img src="https://img.shields.io/badge/ACM_ICAIF--24-10.1145/3677052.3698605-blue" alt="ACM ICAIF-24 Paper">
       </a>
@@ -24,41 +25,41 @@ classes: wide
   </div>
 
   <!-- 2x2 Grid for Details -->
-  <!-- <div class="project-details-grid"> -->
+  <div class="project-details-grid">
     
     <!-- Card 1: Problem -->
-    <!-- <div class="detail-card"> -->
-      <!-- <div class="card-title">The Problem</div> -->
-      <!-- <div class="card-content"> -->
-        <!-- <p> </p> -->
-      <!-- </div> -->
-    <!-- </div> -->
+    <div class="detail-card">
+      <div class="card-title">The Problem</div>
+      <div class="card-content">
+        <p> Standard portfolio optimization often suffers from estimation errors, leading to financial losses. While deep learning offers better pattern recognition, existing models like <b>LSTMs</b> are computationally heavy and complex, creating a need for faster, more stable alternatives. </p>
+      </div>
+    </div>
 
     <!-- Card 2: Solution -->
-    <!-- <div class="detail-card"> -->
-      <!-- <div class="card-title">Solution</div> -->
-      <!-- <div class="card-content">
-        <p> </p>
-      </div> -->
-    <!-- </div> -->
+    <div class="detail-card">
+      <div class="card-title">Solution</div>
+      <div class="card-content">
+        <p> We implemented Modern Hopfield Networks to capture complex market patterns efficiently. By replacing standard layers with Hopfield layers, this solution matches or beats state-of-the-art models like Transformers while being significantly faster and more stable to train. </p>
+      </div>
+    </div>
 
     <!-- Card 3: Skills -->
-    <!-- <div class="detail-card">
+    <div class="detail-card">
       <div class="card-title">Skills Developed</div>
       <div class="card-content">
-        <p></p>
+        <p> Mastered advanced Deep Learning architectures: <b>Hopfield Networks</b>, <b>Transformers</b> and time-series embedding: <b>Time2Vec</b>. Gained expertise in quantitative finance metrics: <b>Sharpe/Sortino ratios</b> and rigorous backtesting strategies: <b>Combinatorial Purged Cross-Validation.</b></p>
       </div>
-    </div> -->
+    </div>
 
     <!-- Card 4: Applications -->
-    <!-- <div class="detail-card">
+    <div class="detail-card">
       <div class="card-title">Applications</div>
       <div class="card-content">
-        <p></p>
+        <p> This project offers a scalable tool for dynamic asset allocation and risk management. The architecture is flexible enough to incorporate unconventional data sources, such as ESG ratings or market sentiment, to enhance investment decision-making.</p>
       </div>
-    </div> -->
+    </div>
 
-  <!-- </div> -->
+  </div>
 </div>
 
 <div class="project-container">
@@ -98,7 +99,7 @@ classes: wide
     <div class="detail-card">
       <div class="card-title">Skills Developed</div>
       <div class="card-content">
-        <p>Explored classification methods like XGBoost, RandomForest and techniques to address imbalance in datasets - <a href="{% post_url 2024-01-01-smote %}">SMOTE</a>. Also delved into Financial Ratios gaining knowledge on understanding a company's fiscal strength.</p>
+        <p>Explored classification methods like <b>XGBoost</b>, <b>RandomForest</b> and techniques to address imbalance in datasets - <a href="{% post_url 2024-01-01-smote %}">SMOTE</a>. Also delved into <b>financial ratios</b> gaining knowledge on understanding a company's fiscal strength.</p>
       </div>
     </div>
 
