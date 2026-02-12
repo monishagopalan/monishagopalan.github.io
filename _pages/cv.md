@@ -79,8 +79,9 @@ permalink: /cv/
       <h3 class="timeline-title">Visual Data Scientist</h3>
       <span class="timeline-subtitle"><a href="https://www.arpm.co/about">Advanced Risk and Portfolio Management</a>, Milan, Italy</span>
       <ul>
-        <li>Contributing to the ARPM e-platform by writing Python code to implement case studies in quantitative finance and advanced data science concepts, such as optimal transport, and creating visualizations to enhance teaching material.</li>
-        <li>Completed the mathematically rigorous ARPM Quant Bootcamp and Data Science Foundations course as part of professional training.</li>
+        <li>Managing a codebase of 600+ Python scripts, translating research theory into production-ready code and complex visualizations for weekly Git deployments.</li>
+        <li>Deepening expertise in Quantitative Research through ARPM’s professional curriculum, mastering advanced topics including Optimal Transport, Random Matrix Theory, and Causal Inference.</li>
+        <li>Delivering business intelligence insights to Sales and Operations teams by analyzing user databases and leading post-production for lecture and marketing videos.</li>
       </ul>
     </div>
   </div>
@@ -93,7 +94,7 @@ permalink: /cv/
       <span class="timeline-subtitle"><a href="https://www.ipazia.com">Ipazia</a>, Milan, Italy | <a href="/assets/documents/reco-ipazia.pdf">Reference Letter</a></span>
       <ul>
         <li>Analysed large-scale time-series datasets and implemented LSTM and Transformer models for optimizing portfolios, using PyTorch Lightning and AWS SageMaker.</li>
-        <li>Worked on a scikit library for portfolio optimisation <a href="https://github.com/scikit-portfolio/scikit-portfolio">skportfolio</a>.</li>
+        <li>Worked on a scikit library for portfolio optimisation <a href="https://github.com/scikit-portfolio/scikit-portfolio">skportfolio</a>, a predecessor to <a href="https://skfoliolabs.com/">skfolio</a>.</li>
         <li>Engaged in pioneering research to develop a novel architecture, incorporating Hopfield layers for portfolio optimisation, contributing to a peer-reviewed publication - <a href="https://dl.acm.org/doi/10.1145/3677052.3698605">ICAIF'24: Hopfield Networks for Asset Allocation</a></li>
         <li>Explored emerging areas like extreme multilabel classification and conformal prediction for uncertainty quantification.</li>
       </ul>
